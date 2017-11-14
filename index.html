@@ -21,6 +21,12 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
+    <script src='js/instafeed.js' type= 'text/javascript'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+
+
   </head>
 
   <body id="page-top">
@@ -28,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rádio Ultra Hits</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"> <audio id="lbg_audio4_html5_shoutcast_902727" preload="metadata" src="http://stm21.srvstm.com:25704/;"  controls preload></audio> </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -36,13 +42,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#play">Play</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Equipe</a>
+              <a class="nav-link js-scroll-trigger" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#crew">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#news">Novidades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
@@ -68,22 +77,39 @@
       </div>
     </header>
 
-    <!-- About Section -->
+    
+    
+
+    
+    <!-- Sobre Section -->
     <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <img src="https://radioultrahits.net/wp-content/uploads/2015/02/logonovosslo2.png" width="518" height="198"  class="img-">
+          <p>Tudo começou em 18 de maio em 2009, a Rádio Ultra Hits entra no ar levando aos seus ouvintes o melhor da musica pop brasileira e internacional.
+            Administrada atualmente por Icaro Dourado, Caique Araujo e Vitor Moitinho a Ultra Hits Network fornece uma playlist atualizada e programação jovem para o publico baiano. </p>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="download-section content-section text-center">
       <div class="container">
         <div class="row">
           
-          <div class="col-lg- mx-auto">
+          <div class="col-lg-4 mx-auto text-bold">
             
-            
-            <p>Tudo começou em 18 de maio em 2009, a Rádio Ultra Hits entra no ar levando aos seus ouvintes o melhor da musica pop brasileira e internacional.
-              Administrada atualmente por Icaro Dourado, Caique Araujo e Vitor Moitinho a Ultra Hits Network fornece uma playlist atualizada e programação jovem para o publico baiano. </p>
-              <span class="image-box-title">Assista-nos ao vivo na twitch clicando no botão</span>
-            <a href="https://www.twitch.tv/radioultrahits" class="btn btn-default btn-lg">Venha curtir musica ao vivo conosco na twitch</a>
+            <img src="https://www.matopejose.com/wp-content/uploads/2016/02/Web-Host-Hospedagem.jpg"  class="img-thumbnail">
+            <h4> Hospedagem de WebSites </h4>
+            <p class ="text-justify">A Ultra Hits Network expandiu os seus serviços, além da disponibilidade de consultoria para sua emissora de comunicação e transmissão de eventos, trabalhamos também com serviços de hospedagem e montagem de plataformas web para a sua empresa com a parceria da MD Host Brasil.</p>
+           
             
           </div>
 
           <div class="col-lg-4 mx-auto">
+            <img src="img/transmissao.jpg" alt="" class="img-thumbnail	"  >
+            
             <h4>Transmissão de Eventos</h4>
             
             <p class ="text-justify"> Transmissão de Eventos
@@ -92,7 +118,8 @@
           </div>
 
           <div class="col-lg-4 mx-auto">
-            <h4> consultoria </h4>
+            <img src="img/consultoria.jpg" alt="" class="img-thumbnail	"  >
+            <h4> Consultoria </h4>
             
             <p class ="text-justify">Uma mão ajuda a outra, assim a Ultra Hits também trabalha com consultoria, ajudando a tantas outras emissoras de rádio que pretendem mudar a forma de fazer rádio, montamos sistemas de Live para Youtube e Facebook, desenvolvimentos de sites e aplicativos além de fornecer sistema de hospedagem para rádio na internet..</p>
             
@@ -103,21 +130,74 @@
     </section>
 
 
-    <!-- Sobre Section -->
-    <section id="download" class="download-section content-section text-center">
+
+
+
+
+
+
+    <!-- Instafeed -->
+    
+    <section id="news" class="content-section text-center">
       <div class="container">
-        <div class="col-lg-8 mx-auto">
+        
+        <h2>Acompanhe nosso Instagram </h2>
+          <a href="https://www.instagram.com/radioultrahits/" class="btn btn-default btn-md">
+            <i class="fa fa-instagram fa-fw"></i>
+            <span class="network-name">Instagram</span>
+            </a>
+            
+            <!-- carrossel -->
+            <div class="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to ="0" 
+                class="active"></li>
+                <li data-target="#carousel" data-slide-to ="1" ></li>
+                <li data-target="#carousel" data-slide-to ="2" ></li>
+                <li data-target="#carousel" data-slide-to ="3" ></li>
+                <li data-target="#carousel" data-slide-to ="4" ></li>
+                <li data-target="#carousel" data-slide-to ="5" ></li>
+                <li data-target="#carousel" data-slide-to ="6" ></li>
+                <li data-target="#carousel" data-slide-to ="7" ></li>
+                <li data-target="#carousel" data-slide-to ="8" ></li>
+                <li data-target="#carousel" data-slide-to ="9" ></li>
+                <li data-target="#carousel" data-slide-to ="10" ></li>
+                <li data-target="#carousel" data-slide-to ="11" ></li>
+              </ol>
+              <!-- carrossel inner -->
+                <div class="carousel-inner" role="listbox" id="instafeed">
+
+                  <div class="item active">
+                    <img src="img/consultoria.jpg" alt="">
+                  </div>
+
+
+                </div>
+
+            <a href="#carousel" class="left carousel-control" data-slide="prev"> <i class="glyphicon-chevron-left "></i> </a> 
+            
+            <a href="#carousel" class="right carousel-control" data-slide="next"> <i class="glyphicon glyphicon-chevron-right"></i> </a>   
+            </div>
           
+         
+
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="content-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contatos da Rádio Ultra Hits</h2>
+            <h2>Mídias Sociais</h2>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
                 <a href="https://twitter.com/radioultrahits1" class="btn btn-default btn-lg">
@@ -157,6 +237,15 @@
                   <span class="network-name">youtube</span>
                 </a>
               </li>
+
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCfPVrMARjSh-uKWH81nrvbQ" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitch fa-fw"></i>
+                  <span class="network-name">twitch</span>
+                </a>
+              </li>
+            
+            
             </ul>
           </div>
         </div>
