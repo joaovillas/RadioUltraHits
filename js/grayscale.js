@@ -2,7 +2,7 @@
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  /*$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -13,7 +13,7 @@
         return false;
       }
     }
-  });*/
+  });
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
@@ -41,7 +41,13 @@
 
 })(jQuery); // End of use strict
 
-
+// Google Maps Scripts
+var map = null;
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'resize', function() {
+  map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+});
 
 function init() {
   // Basic options for a simple Google Map
@@ -185,10 +191,4 @@ function init() {
     map: map,
     icon: image
   });
-}
-
-
-img {
-  max-width: 100% ;
-  height: 300px ;
 }
